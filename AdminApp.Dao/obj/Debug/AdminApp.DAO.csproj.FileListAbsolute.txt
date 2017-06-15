@@ -1,0 +1,8 @@
+E:\Sample Projects\MVCAdminApp\AdminApp.Dao\bin\Debug\AdminApp.Dao.exe.config
+E:\Sample Projects\MVCAdminApp\AdminApp.Dao\bin\Debug\AdminApp.Dao.exe
+E:\Sample Projects\MVCAdminApp\AdminApp.Dao\bin\Debug\AdminApp.Dao.pdb
+E:\Sample Projects\MVCAdminApp\AdminApp.Dao\bin\Debug\Dapper.dll
+E:\Sample Projects\MVCAdminApp\AdminApp.Dao\bin\Debug\Dapper.xml
+E:\Sample Projects\MVCAdminApp\AdminApp.Dao\obj\Debug\AdminApp.DAO.csprojResolveAssemblyReference.cache
+E:\Sample Projects\MVCAdminApp\AdminApp.Dao\obj\Debug\AdminApp.Dao.exe
+E:\Sample Projects\MVCAdminApp\AdminApp.Dao\obj\Debug\AdminApp.Dao.pdb

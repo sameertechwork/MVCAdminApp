@@ -16,7 +16,7 @@ namespace AdminApp.DAO
 
         }
 
-        public IDbConnection OpenConnection()
+        public IDbConnection OpenConnection()//for establish db connection
         {
             var connectionString = ConfigurationManager.ConnectionStrings["AdminAppCon"].ConnectionString;           
             var cn = new SqlConnection(connectionString);

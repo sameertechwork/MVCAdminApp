@@ -1,0 +1,5 @@
+E:\Sample Projects\MVCAdminApp\AdminApp.BL\bin\Debug\AdminApp.BL.exe.config
+E:\Sample Projects\MVCAdminApp\AdminApp.BL\bin\Debug\AdminApp.BL.exe
+E:\Sample Projects\MVCAdminApp\AdminApp.BL\bin\Debug\AdminApp.BL.pdb
+E:\Sample Projects\MVCAdminApp\AdminApp.BL\obj\Debug\AdminApp.BL.exe
+E:\Sample Projects\MVCAdminApp\AdminApp.BL\obj\Debug\AdminApp.BL.pdb
