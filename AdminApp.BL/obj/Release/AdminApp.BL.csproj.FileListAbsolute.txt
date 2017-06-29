@@ -1,0 +1,12 @@
+E:\Sample Projects\MVCAdminApp\AdminApp.BL\bin\Release\AdminApp.BL.dll.config
+E:\Sample Projects\MVCAdminApp\AdminApp.BL\bin\Release\AdminApp.BL.dll
+E:\Sample Projects\MVCAdminApp\AdminApp.BL\bin\Release\AdminApp.BL.pdb
+E:\Sample Projects\MVCAdminApp\AdminApp.BL\bin\Release\AdminApp.Dao.dll
+E:\Sample Projects\MVCAdminApp\AdminApp.BL\bin\Release\AdminApp.Model.dll
+E:\Sample Projects\MVCAdminApp\AdminApp.BL\bin\Release\Dapper.dll
+E:\Sample Projects\MVCAdminApp\AdminApp.BL\bin\Release\AdminApp.Dao.pdb
+E:\Sample Projects\MVCAdminApp\AdminApp.BL\bin\Release\AdminApp.Model.pdb
+E:\Sample Projects\MVCAdminApp\AdminApp.BL\bin\Release\Dapper.xml
+E:\Sample Projects\MVCAdminApp\AdminApp.BL\obj\Release\AdminApp.BL.csprojResolveAssemblyReference.cache
+E:\Sample Projects\MVCAdminApp\AdminApp.BL\obj\Release\AdminApp.BL.dll
+E:\Sample Projects\MVCAdminApp\AdminApp.BL\obj\Release\AdminApp.BL.pdb

@@ -13,10 +13,8 @@ using System.Web.Script.Serialization;
 namespace AdminApp.Controllers
 {
     public class LoginController : Controller
-    {
-        //
+    {     
         // GET: /Login/
-
         public ActionResult Login()
         {
             return View();

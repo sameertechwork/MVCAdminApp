@@ -1,0 +1,5 @@
+E:\Sample Projects\MVCAdminApp\AdminApp.Common\bin\Release\AdminApp.Common.dll.config
+E:\Sample Projects\MVCAdminApp\AdminApp.Common\bin\Release\AdminApp.Common.dll
+E:\Sample Projects\MVCAdminApp\AdminApp.Common\bin\Release\AdminApp.Common.pdb
+E:\Sample Projects\MVCAdminApp\AdminApp.Common\obj\Release\AdminApp.Common.dll
+E:\Sample Projects\MVCAdminApp\AdminApp.Common\obj\Release\AdminApp.Common.pdb

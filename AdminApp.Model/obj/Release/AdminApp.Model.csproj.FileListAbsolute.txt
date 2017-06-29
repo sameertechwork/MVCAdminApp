@@ -1,0 +1,6 @@
+E:\Sample Projects\MVCAdminApp\AdminApp.Model\bin\Release\AdminApp.Model.dll.config
+E:\Sample Projects\MVCAdminApp\AdminApp.Model\bin\Release\AdminApp.Model.dll
+E:\Sample Projects\MVCAdminApp\AdminApp.Model\bin\Release\AdminApp.Model.pdb
+E:\Sample Projects\MVCAdminApp\AdminApp.Model\obj\Release\AdminApp.Model.csprojResolveAssemblyReference.cache
+E:\Sample Projects\MVCAdminApp\AdminApp.Model\obj\Release\AdminApp.Model.dll
+E:\Sample Projects\MVCAdminApp\AdminApp.Model\obj\Release\AdminApp.Model.pdb
