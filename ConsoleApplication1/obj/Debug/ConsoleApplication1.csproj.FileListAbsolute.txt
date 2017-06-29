@@ -1,0 +1,5 @@
+E:\Sample Projects\MVCAdminApp\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+E:\Sample Projects\MVCAdminApp\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+E:\Sample Projects\MVCAdminApp\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+E:\Sample Projects\MVCAdminApp\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+E:\Sample Projects\MVCAdminApp\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

@@ -9,7 +9,7 @@ using System.Data.SqlClient;
 
 namespace AdminApp.DAO
 {
-    internal class BaseDAL
+    public class BaseDAL
     {
         public BaseDAL()
         {
@@ -18,14 +18,11 @@ namespace AdminApp.DAO
 
         public IDbConnection OpenConnection()//for establish db connection
         {
-            var connectionString = ConfigurationManager.ConnectionStrings["AdminAppCon"].ConnectionString;           
+            var connectionString = ConfigurationManager.ConnectionStrings["AdminAppCon"].ConnectionString;
             var cn = new SqlConnection(connectionString);
-            
             IDbConnection connection = cn;
             cn.Open();
             return connection;
-
         }
-
     }
 }

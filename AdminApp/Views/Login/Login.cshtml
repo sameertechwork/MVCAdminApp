@@ -1,17 +1,67 @@
-﻿@{
-    Layout = null;
+﻿@model AdminApp.Model.LoginModel
+@{
+    ViewBag.Title = "Login";
+    // Layout = "~/Views/Shared/_LoginPartial.cshtml";
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INSPINIA | Login</title>
+
+    <link href="~/Scripts/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Scripts/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="~/Scripts/css/animate.css" rel="stylesheet">
+    <link href="~/Scripts/css/style.css" rel="stylesheet">
 }
 
-<!DOCTYPE html>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#txtusername").focus();
+    });
+</script>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Login</title>
-</head>
-<body>
-    <div>
-        
-    </div>
-</body>
-</html>
+@using (Html.BeginForm("Login", "Login", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <body class="gray-bg">
+
+        <div class="middle-box text-center loginscreen  animated fadeInDown">
+            @*<h1 class="logo-name">Admin++</h1>*@
+            <div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <h3>Login AdminApp+</h3>
+                @*<p>Perfectly designed and precisely prepared admin theme with over 50 pages with extra new web app views.
+                    </p>*@
+                <p>Login in. To see it in action.</p>
+                <form class="m-t" role="form">
+                    <div class="form-group">
+                        @*<input type="email" class="form-control" placeholder="Username" required="">*@
+                        @Html.TextBoxFor(a => a.Username, new { @id = "txtusername", @class = "form-control" })
+                        @Html.ValidationMessageFor(a => a.Username)
+                    </div>
+                    <div class="form-group">
+                        @*<input type="password" class="form-control" placeholder="Password" required="">*@
+                        @Html.PasswordFor(a => a.Password, new { @id = "txtpassword", @class = "form-control" })
+                        @Html.ValidationMessageFor(a => a.Password)
+                    </div>
+                    <button type="submit" value="Login" id="btnLogin" class="btn btn-primary block full-width m-b">Login</button>
+
+                    @*<input type="submit" value="Login" id="btnLogin" />*@
+                    <input type="button" value="Cancel" class="btn btn-primary block full-width m-b" onclick="javascript:document.location.href='@Url.Action("Login", "Login")'" />
+
+                    @*<a href="#"><small>Forgot password?</small></a>
+                        <p class="text-muted text-center"><small>Do not have an account?</small></p>
+                        <a class="btn btn-sm btn-white btn-block" href="register.html">Create an account</a>*@
+                </form>
+                <p class="m-t"> <small>AdminApp Sample</small> </p>
+            </div>
+        </div>
+    </body>
+}

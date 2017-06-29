@@ -41,6 +41,11 @@ E:\Sample Projects\MVCAdminApp\AdminApp\bin\System.Web.Razor.dll
 E:\Sample Projects\MVCAdminApp\AdminApp\bin\System.Web.WebPages.Deployment.dll
 E:\Sample Projects\MVCAdminApp\AdminApp\bin\System.Web.WebPages.dll
 E:\Sample Projects\MVCAdminApp\AdminApp\bin\System.Web.WebPages.Razor.dll
+E:\Sample Projects\MVCAdminApp\AdminApp\bin\Dapper.dll
+E:\Sample Projects\MVCAdminApp\AdminApp\bin\AdminApp.BL.pdb
+E:\Sample Projects\MVCAdminApp\AdminApp\bin\AdminApp.Common.pdb
+E:\Sample Projects\MVCAdminApp\AdminApp\bin\AdminApp.Dao.pdb
+E:\Sample Projects\MVCAdminApp\AdminApp\bin\AdminApp.Model.pdb
 E:\Sample Projects\MVCAdminApp\AdminApp\bin\Newtonsoft.Json.xml
 E:\Sample Projects\MVCAdminApp\AdminApp\bin\System.Net.Http.Formatting.xml
 E:\Sample Projects\MVCAdminApp\AdminApp\bin\System.Web.Helpers.xml
@@ -51,6 +56,11 @@ E:\Sample Projects\MVCAdminApp\AdminApp\bin\System.Web.Razor.xml
 E:\Sample Projects\MVCAdminApp\AdminApp\bin\System.Web.WebPages.xml
 E:\Sample Projects\MVCAdminApp\AdminApp\bin\System.Web.WebPages.Deployment.xml
 E:\Sample Projects\MVCAdminApp\AdminApp\bin\System.Web.WebPages.Razor.xml
+E:\Sample Projects\MVCAdminApp\AdminApp\bin\Dapper.xml
 E:\Sample Projects\MVCAdminApp\AdminApp\obj\Debug\AdminApp.Web.csprojResolveAssemblyReference.cache
 E:\Sample Projects\MVCAdminApp\AdminApp\obj\Debug\AdminApp.dll
 E:\Sample Projects\MVCAdminApp\AdminApp\obj\Debug\AdminApp.pdb
+E:\Sample Projects\MVCAdminApp\AdminApp\bin\AdminApp.BL.dll
+E:\Sample Projects\MVCAdminApp\AdminApp\bin\AdminApp.Common.dll
+E:\Sample Projects\MVCAdminApp\AdminApp\bin\AdminApp.Dao.dll
+E:\Sample Projects\MVCAdminApp\AdminApp\bin\AdminApp.Model.dll

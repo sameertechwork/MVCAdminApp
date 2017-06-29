@@ -3,8 +3,8 @@ E:\Sample Projects\AdminApp\AdminApp\AdminApp.Common\bin\Debug\AdminApp.Common.e
 E:\Sample Projects\AdminApp\AdminApp\AdminApp.Common\bin\Debug\AdminApp.Common.pdb
 E:\Sample Projects\AdminApp\AdminApp\AdminApp.Common\obj\Debug\AdminApp.Common.exe
 E:\Sample Projects\AdminApp\AdminApp\AdminApp.Common\obj\Debug\AdminApp.Common.pdb
-E:\Sample Projects\MVCAdminApp\AdminApp.Common\bin\Debug\AdminApp.Common.exe.config
-E:\Sample Projects\MVCAdminApp\AdminApp.Common\bin\Debug\AdminApp.Common.exe
 E:\Sample Projects\MVCAdminApp\AdminApp.Common\bin\Debug\AdminApp.Common.pdb
-E:\Sample Projects\MVCAdminApp\AdminApp.Common\obj\Debug\AdminApp.Common.exe
 E:\Sample Projects\MVCAdminApp\AdminApp.Common\obj\Debug\AdminApp.Common.pdb
+E:\Sample Projects\MVCAdminApp\AdminApp.Common\bin\Debug\AdminApp.Common.dll.config
+E:\Sample Projects\MVCAdminApp\AdminApp.Common\bin\Debug\AdminApp.Common.dll
+E:\Sample Projects\MVCAdminApp\AdminApp.Common\obj\Debug\AdminApp.Common.dll
