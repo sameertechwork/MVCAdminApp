@@ -1,4 +1,5 @@
-﻿@{
+﻿@model AdminApp.Model.NotifModel
+@{
     Layout = null;
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,9 +17,40 @@
 
     <link href="~/Scripts/css/animate.css" rel="stylesheet">
     <link href="~/Scripts/css/style.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 }
 
+
+<script type="text/javascript">
+   
+    $(document). ready(function () {    
+            $.ajax({
+                url: "/Home/ShowNotifCount",
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    //alert('success');
+                   // console.log(data.notifCount)
+                   // console.log(data)
+                   // console.log(data.dataCount.notifCount)
+                    $('#lblnotifcount').text(data.dataCount.notifCount)
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    alert(errorThrown);
+                }
+            });
+
+       // });
+    });
+
+</script>
+
+
+
 <!DOCTYPE html>
+
 
 <html>
 <head>
@@ -27,7 +59,7 @@
 </head>
 <body>
     <div id="wrapper">
-
+        <audio id="my_audio" src="~/Music/Damiano_Baldoni_-_A_Ghr.mp3" loop="loop"></audio>
         <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="side-menu">
@@ -60,8 +92,8 @@
                         <ul class="nav nav-second-level">
                             <li class="active"><a href="index.html">Dashboard v.1</a></li>
                             @*<li><a href="dashboard_2.html">Dashboard v.2</a></li>
-                            <li><a href="dashboard_3.html">Dashboard v.3</a></li>
-                            <li><a href="dashboard_4_1.html">Dashboard v.4</a></li>*@
+                                <li><a href="dashboard_3.html">Dashboard v.3</a></li>
+                                <li><a href="dashboard_4_1.html">Dashboard v.4</a></li>*@
                         </ul>
                     </li>
                     <li>
@@ -282,7 +314,15 @@
                         </li>
                         <li class="dropdown">
                             <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                                <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                                <i class="fa fa-bell"></i>  <span class="label label-primary">
+
+                                    @*@Html.LabelForModel(as.,new {@id="lblnotifcount", @class = "form-control" })*@
+                                    @*@Html.Display(new { @id = "lblnotifcount", @class = "form-control"})*@
+                                    @*@Html.LabelFor(m => m.notifCount)*@
+                                    @*@Html.DisplayFor(a => a.notifCount, new { @id = "lblnotifcount", @class = "form-control" })*@
+                                                                <label id="lblnotifcount" class="ffgorm-control"></label>
+
+                                </span>
                             </a>
                             <ul class="dropdown-menu dropdown-alerts">
                                 <li>
@@ -320,6 +360,25 @@
                                         </a>
                                     </div>
                                 </li>
+                                <li>
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="manage" id="tblManageUser">
+                                        <thead>
+                                            <tr id="0">
+                                                <th>
+                                                    Modules name
+                                                </th>
+                                                <th>
+                                                    Modules Decription
+                                                </th>
+                                                <th class="center-align">
+                                                    Edit
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                </li>
                             </ul>
                         </li>
 
@@ -327,7 +386,8 @@
 
                             @*<i class="fa fa-sign-out" onclick="javascript:document.location.href='@Url.Action("Login", "Login")'"></i> Log out*@
                             @*<input type="li" value="Cancel" onclick="javascript:document.location.href='@Url.Action("Login", "Login")'" />*@
-                        <li>@Html.ActionLink("Logout", "Logout", "Login")
+                        <li>
+                            @Html.ActionLink("Logout", "Logout", "Login")
                         </li>
                     </ul>
                 </nav>
@@ -342,7 +402,7 @@
 
 
 
-   
+
 
 
     @*<footer>
@@ -385,7 +445,7 @@
                     closeButton: true,
                     progressBar: true,
                     showMethod: 'slideDown',
-                    timeOut: 4000
+                    timeOut: 800
                 };
                 toastr.success('Responsive Admin Theme', 'Welcome to AdminApp+');
 

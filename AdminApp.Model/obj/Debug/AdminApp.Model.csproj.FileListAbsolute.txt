@@ -3,3 +3,4 @@ E:\Sample Projects\MVCAdminApp\AdminApp.Model\obj\Debug\AdminApp.Model.pdb
 E:\Sample Projects\MVCAdminApp\AdminApp.Model\bin\Debug\AdminApp.Model.dll.config
 E:\Sample Projects\MVCAdminApp\AdminApp.Model\bin\Debug\AdminApp.Model.dll
 E:\Sample Projects\MVCAdminApp\AdminApp.Model\obj\Debug\AdminApp.Model.dll
+E:\Sample Projects\MVCAdminApp\AdminApp.Model\obj\Debug\AdminApp.Model.csprojResolveAssemblyReference.cache

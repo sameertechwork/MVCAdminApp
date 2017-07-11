@@ -26,11 +26,11 @@ namespace AdminApp.Controllers
             if (ModelState.IsValid)
             {
                 LoginBL objLogin = new LoginBL();              
-                var user = objLogin.LoginUser(lg.Username, lg.Password);
+                var user = objLogin.LoginUser(lg.userName, lg.password);
                 if (user != null)
                 {
-                    if (lg.Username == user.Username && lg.Password == user.Password)
-                        FormsAuthentication.RedirectFromLoginPage(lg.Password, true);
+                    if (lg.userName == user.userName && lg.password == user.password)
+                        FormsAuthentication.RedirectFromLoginPage(lg.password, true);
 
                     return RedirectToAction("Index", "Home");                    
                 }

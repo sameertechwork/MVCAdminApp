@@ -9,13 +9,13 @@ namespace AdminApp.Model
 {
     public class LoginModel
     {
-        public int Userid { get; set; }
-        public int UserTypeId { get; set; } 
+        public int userId { get; set; }
+        public int userTypeId { get; set; } 
 
         [Required(ErrorMessage = "Username required", AllowEmptyStrings = false)]
-        public string Username { get; set; }
+        public string userName { get; set; }
         [Required(ErrorMessage = "Password Required", AllowEmptyStrings = false)]
         [DataType(System.ComponentModel.DataAnnotations.DataType.Password)]
-        public string Password { get; set; }
+        public string password { get; set; }
     }
 }

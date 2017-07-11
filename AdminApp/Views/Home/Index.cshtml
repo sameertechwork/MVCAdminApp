@@ -1,12 +1,25 @@
-﻿@model AdminApp.Model.LoginModel
+﻿@model AdminApp.Model.NotifModel
 @{
-    ViewBag.Title = "Home";
+    //ViewBag.Title = "Home";
     Layout = "~/Views/Shared/_Layout.cshtml";
     
 }
 
+@*<script>
+    window.onload = function () {
+        document.getElementById("my_audio").play();
+    }
+
+    $(document).ready(function () {
+        $("#my_audio").get(0).play();
+    });
+</script>*@
+
 <body>
     <div class="jumbotron">
+        @*https://api.soundcloud.com/tracks/42328219/stream?client_id=b1495e39071bd7081a74093816f77ddb*@
+        @*<audio id="my_audio" src="~/Music/Damiano_Baldoni_-_A_Ghr.mp3" loop="loop"></audio>*@
+
         <h1>ASP.NET</h1>
         <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
         <p><a href="http://asp.net" class="btn btn-primary btn-large">Learn more &raquo;</a></p>

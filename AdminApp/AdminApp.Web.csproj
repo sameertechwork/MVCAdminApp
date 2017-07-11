@@ -121,6 +121,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Global.asax" />
+    <Content Include="Music\Damiano_Baldoni_-_A_Ghr.mp3" />
     <Content Include="Scripts\css\animate.css" />
     <Content Include="Scripts\css\bootstrap.css" />
     <Content Include="Scripts\css\bootstrap.min.css" />
