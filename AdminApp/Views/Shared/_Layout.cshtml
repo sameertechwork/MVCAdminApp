@@ -1,4 +1,4 @@
-﻿@model AdminApp.Model.NotifModel
+﻿@model IEnumerable<AdminApp.Model.NotifModel>
 @{
     Layout = null;
 
@@ -17,32 +17,46 @@
 
     <link href="~/Scripts/css/animate.css" rel="stylesheet">
     <link href="~/Scripts/css/style.css" rel="stylesheet">
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 }
 
 
 <script type="text/javascript">
-   
-    $(document). ready(function () {    
-            $.ajax({
-                url: "/Home/ShowNotifCount",
-                type: 'GET',
-                dataType: 'json',
-                success: function (data) {
-                    //alert('success');
-                   // console.log(data.notifCount)
-                   // console.log(data)
-                   // console.log(data.dataCount.notifCount)
-                    $('#lblnotifcount').text(data.dataCount.notifCount)
-                },
-                error: function (jqXHR, textStatus, errorThrown) {
-                    alert(errorThrown);
-                }
-            });
 
-       // });
+    $(document).ready(function () {
+        $.ajax({
+            url: "/Home/ShowNotifCount",
+            type: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                //alert('success');
+                // console.log(data.notifCount)
+                // console.log(data)
+                // console.log(data.dataCount.notifCount)
+                $('#lblnotifcount').text(data.dataCount.notifCount)
+                $('#lblnotifcount1').text(data.dataCount.notifCount)
+
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                alert(errorThrown);
+            }
+        });
+
+        //$.ajax({
+        //    url: "/Home/ShowNotifmsgs",
+        //    type: 'GET',
+        //    dataType: 'json',
+        //    success: function (data) {
+
+        //        var activeDates = data.dataNotifMsgs.Notifmsgs
+        //        //$('#lblnotifmsgs').text(data.dataNotifMsgs.notificationMessage)
+        //    },
+        //    error: function (jqXHR, textStatus, errorThrown) {
+        //        alert(errorThrown);
+        //    }
+        //});
     });
 
 </script>
@@ -320,70 +334,48 @@
                                     @*@Html.Display(new { @id = "lblnotifcount", @class = "form-control"})*@
                                     @*@Html.LabelFor(m => m.notifCount)*@
                                     @*@Html.DisplayFor(a => a.notifCount, new { @id = "lblnotifcount", @class = "form-control" })*@
-                                                                <label id="lblnotifcount" class="ffgorm-control"></label>
+                                    <label id="lblnotifcount" class="ffgorm-control"></label>
 
                                 </span>
                             </a>
-                            <ul class="dropdown-menu dropdown-alerts">
+                            <ul class="dropdown-menu dropdown-alerts" id="ultest">
                                 <li>
                                     <a href="mailbox.html">
                                         <div>
-                                            <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                            <i class="fa fa-envelope fa-fw"></i> You have <label id="lblnotifcount1" class="ffgorm-control"></label> messages
                                             <span class="pull-right text-muted small">4 minutes ago</span>
                                         </div>
                                     </a>
                                 </li>
                                 <li class="divider"></li>
                                 <li>
-                                    <a href="profile.html">
-                                        <div>
-                                            <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                                            <span class="pull-right text-muted small">12 minutes ago</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <a href="grid_options.html">
-                                        <div>
-                                            <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                                            <span class="pull-right text-muted small">4 minutes ago</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <div class="text-center link-block">
-                                        <a href="notifications.html">
-                                            <strong>See All Alerts</strong>
-                                            <i class="fa fa-angle-right"></i>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="manage" id="tblManageUser">
-                                        <thead>
-                                            <tr id="0">
-                                                <th>
-                                                    Modules name
-                                                </th>
-                                                <th>
-                                                    Modules Decription
-                                                </th>
-                                                <th class="center-align">
-                                                    Edit
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody></tbody>
-                                    </table>
+
+                                    <script type="text/javascript">
+                                        $.ajax({
+                                            url: "/Home/ShowNotifmsgs",
+                                            type: 'GET',
+                                            dataType: 'json',
+                                            success: function (data) {
+                                                //alert("done")
+                                               // console.log(data)
+                                                var msgArray = data.dataNotifMsgs
+                                               // console.log(msgArray)
+
+                                                for (var i = 0, l = msgArray.length; i < l; i++) {
+                                                    $("#ultest").append('<li><a href="/user/messages"><span class="tab">' + msgArray[i].id + ':<br>' + msgArray[i].notificationMessage + '</span></a></li>');
+                                                }                                              
+                                            },
+                                            error: function (jqXHR, textStatus, errorThrown) {
+                                                alert(errorThrown);
+                                            }
+                                        });
+                                    </script>
 
                                 </li>
                             </ul>
                         </li>
 
                         <li>
-
                             @*<i class="fa fa-sign-out" onclick="javascript:document.location.href='@Url.Action("Login", "Login")'"></i> Log out*@
                             @*<input type="li" value="Cancel" onclick="javascript:document.location.href='@Url.Action("Login", "Login")'" />*@
                         <li>

@@ -20,5 +20,16 @@ namespace AdminApp.BL
                 return obj;
             }
         }
+
+        public List<Notification> Notifmsgs()
+        {
+            using (IDbConnection con = OpenConnection())
+            {
+                var obj = con.Query<Notification>("select Id,NotificationMessage as notificationMessage from tblNotification ");
+                return obj.ToList();
+            }
+        }
     }   
 }
+
+

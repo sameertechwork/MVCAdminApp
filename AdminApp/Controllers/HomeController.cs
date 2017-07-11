@@ -35,5 +35,23 @@ namespace AdminApp.Controllers
                 throw;
             }
         }
+
+        public JsonResult ShowNotifmsgs()
+        {
+            try
+            {
+                LayoutBL objNotif = new LayoutBL();
+
+                var jsonNotifData = new
+                {
+                    dataNotifMsgs = objNotif.Notifmsgs()
+                };
+                return Json(jsonNotifData, JsonRequestBehavior.AllowGet);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }

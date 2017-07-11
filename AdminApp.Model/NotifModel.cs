@@ -8,8 +8,13 @@ namespace AdminApp.Model
 {
     public class NotifModel
     {
-        public int id { get; set; }        
-        public string notificationMessage { get; set; }
         public int notifCount { get; set; }
+        public List<Notification> allNotification { get; set; }
+    }
+
+    public class Notification
+    {
+        public int id { get; set; }
+        public string notificationMessage { get; set; }
     }
 }
